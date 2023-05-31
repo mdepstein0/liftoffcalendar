@@ -1,0 +1,163 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="feedstyle.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+        <link href="bootstrap.css" type="text/css" rel="stylesheet">
+        <!-- Referencing source code from bootstrap: https://bootsnipp.com/snippets/WaeDX in order to get card format-->
+    </head>
+
+    <h1> Share Posts With Your Friends! </h1>
+    <body>
+            <!-- Navigation bar code -->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Navigation Bar</a>
+                    <div class="collapse navbar-collapse" id="navbarColor02">
+                        <ul class="navbar-nav me-auto">
+                        <li class="nav-item"><a href="userhome.html" rel="noopener noreferrer">Your Profile</a></li>
+                            <li class="nav-item"><a href="friends.php" rel="noopener noreferrer" class="active">Your Friends</span></a></li>
+                            <li class="nav-item"><a href="findfriends.php" rel="noopener noreferrer">Find Friends</a></li>
+                            <li class="nav-item"><a href="notifications.php" rel="noopener noreferrer">Requests</span></a></li>
+                            <li class="nav-item"><a href="feed.html" rel="noopener noreferrer">Feed & Collaborate</a></li>
+                            <li class="nav-item"><a href="" rel="noopener noreferrer">Your Posts</a></li>
+                            <li><a href="logout.php" rel="noopener noreferrer">Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- Shadow underneath the navigation bar to match the rest of the friends page-->
+            <div class="all_users">
+                <h3> Recent Posts </h3>
+            </div>
+            <!-- Beginning of 'Posts' section, use a section to separate part of the page for posts -->
+            <section class="details-card">
+                <!-- Add a button that will take user to post creation form -->
+                <div class="add_post_btn"> 
+                    <li class="post-item"><a href="#" class="btn-card"> CREATE POST </a> </ahref></li>
+                </div>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card-content">
+                                <div class="card-img">
+                                    <img src="https://images3.alphacoders.com/997/thumb-1920-997294.png" alt="">
+                                </div>
+                                <!-- Sample Post Card, users will be able to change the h3, p, and add a link to the href-->
+                                <div class="card-desc">
+                                    <h3>Preparing Your Job Portfolio</h3>
+                                    <p>Check out this article I found on writing job portfolios!</p>
+                                    <p>May 24, 2022 </p>
+                                        <a href="#" class="btn-card">VISIT WEBSITE</a>   
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card-content">
+                                <!-- This would be the default image for posts if users do not want to add them themselves v -->
+                                <div class="card-img">
+                                    <img src="https://images3.alphacoders.com/997/thumb-1920-997294.png" alt="">
+                                </div>
+                                <!-- Adding another card for demonstration purposes in the sprint review: Show the audience what can be added-->
+                                <div class="card-desc">
+                                    <h3>Short Header (With Topic)</h3>
+                                    <p>Sentence explaining what the website is.</p>
+                                    <p>Date Published</p>
+                                        <a href="#" class="btn-card">*link to website*</a>   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+<style>
+    h1{
+        padding-top: 50px;
+        padding-bottom: 40px;
+    }
+    h3{
+        padding-bottom: 5px;
+    }
+
+    /* Some CSS Code from the bootstrap card template, mostly modified to match website aesthetics*/
+    @import url('https://fonts.googleapis.com/css?family=Raleway:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto+Condensed:400,400i,700,700i');
+    
+    section{
+        padding: 50px 0;
+    }
+    .details-card {
+        background: #ecf0f1;
+    }
+
+    .card-content {
+        background: #ffffff;
+        border: 4px;
+        box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    }
+
+    .card-img {
+        position: relative;
+        overflow: hidden;
+        border-radius: 0;
+        z-index: 1;
+    }
+
+    .card-img img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .card-img span h4{
+            font-size: 12px;
+            margin:0;
+            padding:10px 5px;
+            line-height: 0;
+    }
+    .card-desc {
+        padding: 1.25rem;
+    }
+
+    .card-desc h3 {
+        background-color:#1ABC9C;
+        color: whitesmoke;
+        font-weight: 600;
+        font-size: 1.5em;
+        line-height: 1.3em;
+        margin-top: 0;
+        margin-bottom: 5px;
+        padding: 0;
+    }
+
+    .card-desc p {
+        color: #737374;
+        font-size: 14px;
+        font-weight: 400;
+        font-size: 1em;
+        line-height: 1.5;
+        margin: 0px;
+        margin-bottom: 20px;
+        padding: 0;
+        font-family: 'Raleway', sans-serif;
+    }
+    .btn-card{
+        background-color: #1ABC9C;
+        box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+        padding: 10px 10px;
+        font-size: .81rem;
+        margin: 0;
+        border: 0;
+        cursor: pointer;
+        white-space: normal;
+        word-wrap: break-word;
+        color: #fff;
+    }
+    .btn-card:hover {
+        background-color: #e068b2;
+    }
+    
+    a.btn-card {
+        text-decoration: none;
+        list-style-type: none;
+    }
+</style>

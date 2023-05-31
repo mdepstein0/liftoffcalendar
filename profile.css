@@ -1,0 +1,57 @@
+/*Source Code referenced from Muhammad Asif on codeconvey.com*/
+/*December 16, 2020*/
+/**
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200&display=swap');
+</style> 
+**/
+body {
+    /**background: linear-gradient(to right, #e0f3ff, #86bec6);**/
+    padding-top: 0px;
+    margin-top: 0px;
+    color: #000;
+    height: 100%;
+    /*background-image: url("https://www.graphicsfordoctors.com/wp-content/uploads/2014/05/blue-BG.jpg");
+    background-size: cover;
+    */
+}
+
+body::after {
+  content: "";
+  background-image: url("https://www.graphicsfordoctors.com/wp-content/uploads/2014/05/blue-BG.jpg");
+  background-size: cover;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;  
+  height: 100%;  
+}
+
+.userprofile .card .card-header .pfp {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin: 50px;
+    border: 10px;
+    border-radius: 50%;
+}
+.userprofile .card h3 {
+    font-size: 20px;
+    font-weight: 600;
+}
+.userprofile .card p {
+    font-size: 20px;
+}
+
+
+/**Source: https://www.w3schools.com/css/css3_buttons.asp**/
+
+.button {
+    padding: 15px 32px;
+    text-align: center;
+
+}
+

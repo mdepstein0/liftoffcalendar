@@ -1,0 +1,38 @@
+/* navigation dropdown code */
+.dropbtn {
+    margin-left: 40px;
+    margin-top: 25px; /* using margins to adjust the spacing so it does not go on the corner of the screen*/
+    margin-bottom: 50px;
+    background-color: #cdffc7;
+    color: black;
+    padding: 14px; /*Adjusting the padding to make the button an appropriate size*/
+    border-color: #086d48;
+    border-width: 4px;
+  }
+  
+  .dropdown {
+    display: inline-block;
+    font-size: 20px;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute; /* when the drop down menu appears, it does not move any other elements*/
+    background-color: #ffffff;
+    min-width: 160px;
+    box-shadow: 8px 8px 16px 0px;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none; /* makes it so links aren't underlined under dropdown when you hover over them */
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #a0f3b7;} /* Hovering over the options in the menu will light them up green */
+  
+  .dropdown:hover .dropdown-content {display: block;} /* When you hover, the boxes below the menu appear */
+  
+  .dropdown:hover .dropbtn {background-color: #b9f8e0;} /* Hovering over the dropdown button changes the shade of the Menu box */
+  

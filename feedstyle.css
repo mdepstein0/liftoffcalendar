@@ -1,0 +1,286 @@
+*{
+    box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    text-decoration:none;
+}
+body{
+    background: #222;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+    outline: none;
+}
+
+/* Removes underline from nav bar links*/
+nav a{
+    text-decoration: none;
+}
+
+h1{
+    text-align: center;
+    color: #232323;
+}
+
+h3{
+    padding-top: 20px;
+    text-align: center;
+    background-color: rgba(0,0,0,.2);
+}
+
+.login_signup_container input[type='text'],
+.login_signup_container input[type='email'],
+.login_signup_container input[type='password']{
+    width: 100%;
+    padding: 10px;
+    border: 0;
+    border-bottom: 1px solid #8795A1;
+    outline: none;
+    margin-bottom: 10px;
+    font-size: 14px;
+    background: none;
+    color: #232323;
+    font-family: 'Open Sans', sans-serif;
+}
+.login_signup_container input[type='text']:focus,
+.login_signup_container input[type='email']:focus,
+.login_signup_container input[type='password']:focus{
+    border-color: #606F7B;
+    
+}
+.login_signup_container label{
+    font-weight: bold;
+    color: #232323;
+}
+.login_signup_container input[type='submit']{
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: 1px solid rgba(23,23,23, .1);
+    outline: none;
+    background-color: #1F9D55;
+    
+}
+.form_link{
+    float: right;
+    font-size: 16px;
+}
+.site_link,.login_signup_container p{
+    font-size: 14px;
+    text-align: center;
+    color: #3D4852;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.site_link:hover,.form_link:hover,.login_signup_container p a:hover{
+    text-decoration: underline;
+    color: #1F9D55;
+}
+
+.login_signup_container .errorMsg{
+    border: 2px solid #CC1F1A;
+    color: #CC1F1A;
+    letter-spacing: normal;
+    font-size: 16px;
+    padding: 10px;
+}
+.login_signup_container .successMsg{
+    border: 2px solid #1F9D55;
+    color: #1F9D55;
+    letter-spacing: normal;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.profile_container{
+    position:relative; 
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Nav Bar Styling */
+.header {
+    background: rgba(209, 157, 243, 0.466);
+
+}
+header::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+nav{
+    float: center;
+    text-decoration: none;
+}
+nav ul{
+    list-style-type: none;
+    margin-top: 10;
+    margin: 20;
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+}
+nav li{
+    display: inline-block;
+    margin-left: 80px;
+    padding-top: 0px;
+    text-decoration: none;
+    text-align: center;
+}
+ 
+nav li a{
+    vertical-align: middle;
+    line-height: 50px;
+}
+
+/* Nav Bar End */
+
+.inner_profile{
+    padding-top: 40px;
+    padding-bottom: 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+.inner_profile .img{
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #FFF;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.12),
+            0 2px 4px 0 rgba(0,0,0,0.08);
+    border: 3px solid #3D4852;
+    margin: 0 auto;
+    display: inline-block;
+}
+.inner_profile .img img{
+    max-height: 100%;
+    width: auto;
+}
+
+.inner_profile h1{
+    padding: 0;
+    margin: 0;
+    font-size: 25px;
+    text-transform: capitalize;
+}
+
+/* Controls nav bar view of Your Friends*/
+
+.active{
+    outline: none;
+}
+
+/* ALL USERS */
+
+.all_users{
+    color:black;
+    align-items: left;
+    justify-content: left;
+}
+.all_users .usersWrapper{   
+    display: flex;
+    color:black;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 8px
+}
+.all_users .user_box{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border: 1px solid rgba(23,23,23, .2);
+    margin: 5px;
+    padding: 5px;
+    width: 48%;
+    background-color: #FFF;
+    align-items: stretch;
+}
+.user_box .user_img{
+
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border: 1px solid rgba(23,23,23, .1);
+    margin-right: 5px;
+    border-radius: 2px;
+    background-color: #E6E8FF;
+}
+.user_box .user_img img{
+    height: 100%;
+    width: auto;
+}
+.user_box .user_info{
+    flex-grow: 1;
+}
+.user_info span{
+    display: block;
+}
+.user_info span:first-child{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    text-transform: capitalize;
+    color: #222222;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.see_profileBtn{
+    background-color: #794ACF;
+    border: 1px solid rgba(23,23,23, .1);
+    color: #FFF;
+    font-size: 12px;
+    padding:3px 7px;
+    text-transform: uppercase;
+}
+.see_profileBtn:hover{
+    background-color: #382B5F;
+}
+
+.actions{
+    text-align: center;
+    margin: 10px 0;
+    border: 1px solid rgba(23,23,23, .1);
+    padding: 10px;
+    background-color: #FFF;
+}
+
+.req_actionBtn{
+    font-size: 14px;
+    text-transform: uppercase;
+    padding:5px 10px;
+    border: 1px solid rgba(23,23,23, .1);
+    color: #222222;
+}
+
+.acceptRequest,.sendRequest{
+    background-color: #794ACF;
+    color: #FFF;
+}
+.acceptRequest:hover,.sendRequest:hover{
+    background-color: #382B5F;
+}
+.unfriend, .ignoreRequest,.cancleRequest{
+    background-color: #EF5753;
+    color: #FFF;
+}
+.unfriend:hover,.ignoreRequest:hover,.cancleRequest:hover{
+    background-color: #E3342F;
+    
+}
+
+/* RESPONSIVE */
+@media only screen and (max-width: 560px) {
+    .all_users .user_box{
+        width: 100%;
+    }
+  }
